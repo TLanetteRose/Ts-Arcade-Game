@@ -1,1 +1,54 @@
+body {
+    text-align: center;
+    font-family: 'Open Sans', san-serif;
+}
+
+.header h1 {
+	font-family: 'Luckiest Guy', cursive;
+	padding: 20px;
+}
+
+
+
+/* Modal Section */
+
+.overlay {
+	positon: fixed; /* Sits on top of page */
+	display: none; /* Will be hidden by default */
+	width: 500px;
+	height: 530px;
+	top: 95px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 0 auto;
+	background-color: rgba(0,0,0,0.5); /* Black Background */
+	z-index: 2; 
+	cursor: pointer; /* Adds pointer to hover */
+}
+
+
+.game-start {
+	display: none;
+	position: fixed; 
+	z-index: 1;
+	left: 0;
+	right: 0;
+	top: 155px;
+	width: 420px;
+	height: 410px;
+	margin: 0 auto;
+	padding: 1em 2em;
+	overflow: auto; /* Enables Scroll */
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+	background-color: #fefefe;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+}
 
