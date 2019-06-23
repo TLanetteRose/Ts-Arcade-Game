@@ -1,10 +1,4 @@
 // Declaring variables needed for game
-let modal = document.querySelector(".game-start");
-let overlay = document.querySelector(".overlay");
-let gameover = document.querySelector(".game-over");
-let winModal = document.querySelector(".winner");
-
-
 
 
 
