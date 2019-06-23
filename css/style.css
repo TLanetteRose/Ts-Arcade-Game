@@ -5,7 +5,7 @@ body {
 
 .header h1 {
 	font-family: 'Luckiest Guy', cursive;
-	padding: 20px;
+	padding: 30px;
 }
 
 
@@ -13,7 +13,7 @@ body {
 /* Modal Section */
 
 .overlay {
-	positon: fixed; /* Sits on top of page */
+	position: fixed; /* Sits on top of page */
 	display: none; /* Will be hidden by default */
 	width: 500px;
 	height: 530px;
@@ -28,8 +28,9 @@ body {
 	
 }
 
-.modal-content {
+.modal-content p {
 	background-color: #fefefe;
+	
 	
 }
 
