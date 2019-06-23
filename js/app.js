@@ -32,8 +32,55 @@ Enemy.prototype.render = function() {
 // This class requires an update(), render() and
 // a handleInput() method.
 
+//Hero class
+class Hero {
+    //Constructor for Hero
+    constructor() {
+        this.sprite = 'images/char-horn-girl.png';
+        this.x = 0;
+        this.y = 0;
+        
+    }
+    // Draws player on canvas at current x and y position
+    render() {
+        ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
+    }
 
-// Draws player on canvas
+    //Handle keyboard keys and update player's position
+    /* 
+    * @param {string} input - Direction to travel
+    */
+
+    handleInput(keyPress) {
+        switch(keyPress) {
+            case 'left': 
+            this.x -= 20;
+            break;
+            case 'up': 
+            this.y -= 20;
+            break;
+            case 'right':
+            this.x += 20;
+            break;
+            case 'down': 
+            this.y += 20
+            break;
+        }
+    }
+
+
+}
+
+
+
+ const player = new Hero();
+ const roach1 = new Enemy(-101, 0, 275);
+ const roach2 = new Enemy(-101, 83, 300);
+ const roach3 = new Enemy((-101 * 2.5), 166, 300);
+ const roach4 = new Enemy((-101 * 2.5), 0, 275);
+ const allEnemies = [];
+ allEnemies.push(roach1, roach2, roach3, roach4);
+
 
 
 
