@@ -7,9 +7,7 @@
 var Enemy = function(x, y, speed = 10, sprite) {
     // Variables applied to each of our instances go here,
     // we've provided one for you to get started
-    this.x = x;
-    this.y = y;
-    this.speed = speed;
+    
     // The image/sprite for our enemies, this uses
     // a helper we've provided to easily load images
     this.sprite = 'images/enemy-bug.png';
@@ -21,11 +19,8 @@ Enemy.prototype.update = function(dt) {
     // You should multiply any movement by the dt parameter
     // which will ensure the game runs at the same speed for
     // all computers.
-    this.x = this.x + (this.speed * dt);
-    if (this.x > 450){
-        this.x = 0;
-    }
-    this.checkCollisions(player.x, player.y);
+    
+
 };
 
 // Draw the enemy on the screen, required method for game
@@ -36,58 +31,22 @@ Enemy.prototype.render = function() {
 // Now write your own player class
 // This class requires an update(), render() and
 // a handleInput() method.
-var Player = function(x, y, sprite) {
-    this.x = x;
-    this.y = y;
-    this.sprite = 'images/char-horn-girl.png';
-};
 
-Player.prototype.update = function(dt) {
-};
 
-Player.prototype.render = function(){
-    ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
-};
+// Draws player on canvas
 
-Player.prototype.handleInput = function(keyPress) {
-    if (keyPress === 'up') {
-        if (this.y === 70) {
-            this.y = 0;
-            endGame(true);
-        } else {
-            this.y = this.y - 80;
-        };
-    } else if (keyPress === 'down') {
-        if (this.y === 390) {
 
-        } else {
-            this.y = this.y + 80;
-        };
-    } else if (keyPress === 'left') {
-        if (this.x < 10) {
 
-        } else {
-            this.x = this.x - 100;
-        };
-    } else if (keyPress === 'right') {
-        if (this.x > 380) {
 
-        } else {
-            this.x = this.x + 100;
-        };
-    };
-};
+
+
+// Reset player to original position
+
+
 
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
 // Place the player object in a variable called player
-var allEnemies = [
-    new Enemy(0, 70, 100),
-    new Enemy(0, 150, 200),
-    new Enemy (0, 230, 120)
-    ];
-
-var player = new Player(200, 390);
 
 
 // This listens for key presses and sends the keys to your
@@ -102,3 +61,10 @@ document.addEventListener('keyup', function(e) {
 
     player.handleInput(allowedKeys[e.keyCode]);
 });
+
+
+
+
+
+
+
