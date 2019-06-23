@@ -1,8 +1,6 @@
 // Declaring variables needed for game
-let modal = document.querySelector(".game-start");
-let overlay = document.querySelector(".overlay");
-let gameover = document.querySelector(".game-over");
-let winModal = document.querySelector(".winner");
+let level = 1; //Initial Level
+let allEnemies = [];
 
 //Starts the game
 function startGame(){
@@ -33,20 +31,11 @@ Enemy.prototype.update = function(dt) {
     // You should multiply any movement by the dt parameter
     // which will ensure the game runs at the same speed for
     // all computers.
-    this.x +=  this.speed * dt;
-
-    if (this.x > 510) {
-        this.x = -50;
-        this.speed = 100 + Math.floor(Math.random() * 222);
-    };
-    if (player.x < this.x + 80 &&
-        player.x + 80 > this.x &&
-        player.y < this.y + 60 &&
-        60 + player.y > this.y){
-        player.x = 202;
-        player.y = 405;
-    };
-
+    this.x = this.x + (this.speed * dt * level);
+    if (this.location = player.location) {
+        player.location = startingPoint;
+    }
+    
 };
 
 // Draw the enemy on the screen, required method for game
@@ -57,7 +46,22 @@ Enemy.prototype.render = function() {
 // Now write your own player class
 // This class requires an update(), render() and
 // a handleInput() method.
+var Player = function (x, y) {
+    this.x = x;
+    this.y = y;
+    this.sprite = 'images/char-horn-girl.png';
+}
+var playerX
+var playerY
 
+Player.prototype.update = function(){
+    playerX = this.x;
+    playerY = this.y;
+}
+
+Player.prototype.render = function (){
+    ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
+}
 
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
