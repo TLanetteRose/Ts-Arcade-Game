@@ -68,14 +68,21 @@ class Hero {
             //Compare the player and enemy's right and left sides
             if (this.y === enemy.y && (enemy.x + enemy.step/2 > this.x && enemy.x < this.x + this.step/2)) {
                 this.reset(); 
-            }    
+            }
+            // Check for win
+            if(this.y === 55) {
+            console.log('Win!');    
            
+            }
+        
         }
-        // Check for win
-        if(this.y === 55) {
-            console.log('Win!');
-        }
+
     }
+        // Reset Game Hero
+        reset() {
+            this.y = this.startY;
+            this.x = this.startX;
+        }
 
 
     }
