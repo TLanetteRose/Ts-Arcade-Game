@@ -65,11 +65,19 @@ class Hero {
     }
     update() {
         for (let enemy of allEnemies) {
-            if (this.y === enemy.y && (enemy.x + enemy.step > this.x && enemy.x < this.x + this.step)) {
-                console.log('Collide!'); 
+            //Compare the player and enemy's right and left sides
+            if (this.y === enemy.y && (enemy.x + enemy.step/2 > this.x && enemy.x < this.x + this.step/2)) {
+                this.reset(); 
             }    
            
         }
+        // Check for win
+        if(this.y === 55) {
+            console.log('Win!');
+        }
+    }
+
+
     }
 
     //Handle keyboard keys and update player's position
