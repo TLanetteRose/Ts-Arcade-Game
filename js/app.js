@@ -54,7 +54,7 @@ class Hero {
         this.step = 101; //Width of block
         this.jump = 83; //Height of block
         this.startX = this.step * 2;
-        this.startY = (this.jump * 5) - 20;
+        this.startY = (this.jump * 4) + 55;
         this.x = this.startX;
         this.y = this.startY;
         
@@ -65,9 +65,9 @@ class Hero {
     }
     update() {
         for (let enemy of allEnemies) {
-            if (this.y === enemy.y){
-            console.log('Same row!');   
-            }
+            if (this.y === enemy.y && (enemy.x + enemy.step > this.x && enemy.x < this.x + this.step)) {
+                console.log('Collide!'); 
+            }    
            
         }
     }
