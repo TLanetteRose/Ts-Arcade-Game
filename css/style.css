@@ -1,6 +1,11 @@
 body {
     text-align: center;
     font-family: 'Open Sans', san-serif;
+    background-color: #ff9668;
+}
+
+.header {
+	color: ;
 }
 
 .header h1 {
@@ -28,7 +33,7 @@ body {
 	
 }
 
-.modal-content p {
+.modal_body p {
 	background-color: #fefefe;
 	
 	
