@@ -1,4 +1,4 @@
-// Declaring variables needed for game
+// Thank you
 //https://matthewcranford.com/arcade-game-walkthrough-part-6-collisions-win-conditions-and-game-resets/
 
 
@@ -57,35 +57,17 @@ class Hero {
         this.startY = (this.jump * 4) + 55;
         this.x = this.startX;
         this.y = this.startY;
+        this.victory = false;
         
     }
     // Draws player on canvas at current x and y position
     render() {
         ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
     }
-    update() {
-        for (let enemy of allEnemies) {
-            //Compare the player and enemy's right and left sides
-            if (this.y === enemy.y && (enemy.x + enemy.step/2 > this.x && enemy.x < this.x + this.step/2)) {
-                this.reset(); 
-            }
-            // Check for win
-            if(this.y === 55) {
-            console.log('Win!');    
-           
-            }
-        
-        }
-
-    }
-        // Reset Game Hero
-        reset() {
-            this.y = this.startY;
-            this.x = this.startX;
-        }
+    
 
 
-    }
+    
 
     //Handle keyboard keys and update player's position
     /* 
@@ -116,9 +98,31 @@ class Hero {
             break;
         }
     }
+    update(){
+        //Check Collision
+        for(let enemy of allEnemies){
+            //Compare player and enemy x and y
+            if (this.y === enemy.y && (enemy.x + enemy.step/2 > this.x && enemy.x < this.x + this.step/2) ) {
+                this.reset();
+            }
+        }
+        //Check for win
+        if(this.y === 55){
+            this.victory = true;
+        }
+    }
 
-
+    //Reset Hero
+    reset() {
+        // Set x and y to starting x and y
+        this.y = this.startY;
+        this.x = this.startX;
+    }
+    
 }
+
+
+
 
 
 
@@ -126,10 +130,10 @@ class Hero {
  const roach1 = new Enemy(-101, 0, 200);
  const roach2 = new Enemy(-101, 83, 300);
  const roach3 = new Enemy((-101 * 2.5), 166, 300);
- //const roach4 = new Enemy((-101 * 2.5), 0 200);
+ const roach4 = new Enemy((-101 * 2.5), 0, 200);
 
  const allEnemies = [];
- allEnemies.push(roach1, roach2, roach3);
+ allEnemies.push(roach1, roach2, roach3, roach4);
  console.log(allEnemies);
 
 
