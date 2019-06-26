@@ -5,6 +5,11 @@ body {
 }
 
 
+header {
+	height: 100px;
+}
+
+
 .header h1 {
 	font-family: 'Luckiest Guy', cursive;
 	font-size: 3em;
