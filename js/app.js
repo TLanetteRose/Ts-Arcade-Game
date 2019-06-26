@@ -3,20 +3,18 @@
 
 //Declare modal variables 
 let modal = document.querySelector(".game_start");
-let span = document.querySelector(".close")[0];
 let overlay = document.querySelector(".overlay");
+let btn = document.querySelector(".btn_start");
 let gameover = document.querySelector(".game_over");
 
 
-// When user clicks on span x, close modal
-
 
 //Start Game
-function startGame(){
+
+btn.onclick = function startGame(){
     modal.classList.add("hide");
     overlay.classList.add("hide");
 }
-
 
 //When Player loses lives
 function gameOver(){
@@ -135,7 +133,7 @@ class Hero {
         }
         //Check for win
         if(this.y === 55){
-            this.victory = true;
+           this.victory = true;
         }
     }
 
