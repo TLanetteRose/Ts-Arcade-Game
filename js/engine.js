@@ -25,12 +25,12 @@ var Engine = (function(global) {
         lastTime,
         id;
 
-    
-
 
     canvas.width = 505;
     canvas.height = 606;
     doc.body.appendChild(canvas);
+
+
 
     /* This function serves as the kickoff point for the game loop itself
      * and handles properly calling the update and render methods.
@@ -59,6 +59,8 @@ var Engine = (function(global) {
         /* Use the browser's requestAnimationFrame function to call this
          * function again as soon as the browser is able to draw another frame.
          */
+
+
         if (player.victory === true){
             win.cancelAnimationFrame(id);
            

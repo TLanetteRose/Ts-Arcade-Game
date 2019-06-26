@@ -2,10 +2,10 @@
 //https://matthewcranford.com/arcade-game-walkthrough-part-6-collisions-win-conditions-and-game-resets/
 
 //Declare modal variables 
-let modal = document.querySelector(".game_start");
-let overlay = document.querySelector(".overlay");
-let btn = document.querySelector(".btn_start");
-let gameover = document.querySelector(".game_over");
+const modal = document.querySelector(".game_start");
+const overlay = document.querySelector(".overlay");
+const btn = document.querySelector(".btn_start");
+
 
 
 
