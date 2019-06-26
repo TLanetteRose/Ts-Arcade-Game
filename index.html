@@ -8,32 +8,44 @@
 
 </head>
 <body>
-	<!--Header-->
-	<header class="header">
-		<h1>Don't Get Poached by the Roach!</h1>
-	</header>
 	
-	<!--Overlay -->
-	<div class="overlay"></div> 
+		<!--Header-->
+		<header class="header">
+			<h1>Don't Get Poached by the Roach!</h1>
+		</header>
 	
-	<!--Game Start Modal -->
-	<div class="game_start"> 
-		<!--Modal Content -->
-		<div class="modal_body">
-			<h2>Welcome to My Roach Roadway Game</h2>
-			<h3>Instructions</h3>
-			<h5>Welcome to my Roach Roadway Game! Use your keyboard arrow keys-- up, down, left, right-- to move your Sprite across the road. Your goal is to move across the blocks and get to the water without colliding with those pesky roaches. Once you reach the water, you win. Good luck!</h5>
-			<button class="btn_start"> Ready! Set! Go!</button>
+		<!--Overlay -->
+		<div class="overlay"></div> 
+	
+		<!--Game Start Modal -->
+		<div class="game_start"> 
+			<!--Modal Content -->
+			<div class="modal_body">
+				<h2>Welcome to My Roach Roadway Game</h2>
+				<h3>Instructions</h3>
+				<h5>Welcome to my Roach Roadway Game! Use your keyboard arrow keys-- up, down, left, right-- to move your Sprite across the road. Your goal is to move across the blocks and get to the water without colliding with those pesky roaches. Once you reach the water, you win. Good luck!</h5>
+				<button class="btn_start"> Ready! Set! Go!</button>
+			</div>
+		</div> 
+
+		<!-- Modal for game over -->
+		<div class="game_over">
+			<h2>You made it to the water safely!</h2>
+			<h3>Play Again!</h3>
+			<button onclick="resetGame()"> Play Again </button>
 		</div>
-	</div> 
-
-	<!-- Modal for game over -->
-	<div class="game_over">
-		<h2>You made it to the water safely!</h2>
-		<h3>Play Again!</h3>
-		<button onclick="resetGame()"> Play Again </button>
-	</div> 
-
+		<!-- Footer
+		<footer class="footer">
+       	 	<p>Made by T.Lanette Pollard, ©2019 <a href="http://www.rogetfreelancing.com">RogetFreelancing</a></p>
+        	<p>
+          	<a href="http://jigsaw.w3.org/css-validator/check/referer">
+          	<img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+          	</a>
+        	</p>
+      	</footer> -->
+	
 	
 
     <script src="js/resources.js"></script>
