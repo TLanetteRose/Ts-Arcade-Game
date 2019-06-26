@@ -16,11 +16,6 @@ btn.onclick = function startGame(){
     overlay.classList.add("hide");
 }
 
-//When Player loses lives
-function gameOver(){
-    overlay.classList.add("show");
-    gameover.classList.add("show");
-}
 
 //Resets the game
 function resetGame(){
@@ -90,9 +85,7 @@ class Hero {
         ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
     }
     
-
-
-    
+ 
 
     //Handle keyboard keys and update player's position
     /* 
@@ -163,10 +156,6 @@ class Hero {
  console.log(allEnemies);
 
  
-
- 
-
-
 
 
 

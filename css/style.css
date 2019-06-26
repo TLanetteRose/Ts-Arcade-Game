@@ -10,26 +10,22 @@ html {
 	box-sizing: inherit;
 }
 
-html,
-body {
+html {
 	width: 100%;
-	height: 100vh;
 	margin: 0;
 	padding: 0;
     
 }
 
 body {
+	min-height: 100vh;
 	position: relative;
 	text-align: center;
     font-family: 'Open Sans', san-serif;
     background-color: #a3de83;
-    padding-bottom: 60px;
+   
 }
 
-/*.container {
-	height: 100%;
-} */
 
 header {
 	
@@ -40,7 +36,6 @@ header {
 	height: 150px;
 	width: 100%;
 	margin: 20px;
-
 	
 }
 
@@ -151,27 +146,6 @@ header {
 	font-size: 16px;
 }
 
-/* Style for Footer */
 
-/*.footer {
-	position: fixed;
-	left: 0;
-	bottom: 0;
 
-	background-color: #228c7b;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100px;
-	width: 100%;
-	
-}
-.footer p {
-	color: white;
-	font-family: inherit;
-}
-p a:link {
-	color: white;
-}
-*/
 
