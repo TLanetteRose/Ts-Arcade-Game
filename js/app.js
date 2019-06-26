@@ -1,6 +1,33 @@
 // Thank you
 //https://matthewcranford.com/arcade-game-walkthrough-part-6-collisions-win-conditions-and-game-resets/
 
+//Declare modal variables 
+let modal = document.querySelector(".game_start");
+let span = document.querySelector(".close")[0];
+let overlay = document.querySelector(".overlay");
+let gameover = document.querySelector(".game_over");
+
+
+// When user clicks on span x, close modal
+
+
+//Start Game
+function startGame(){
+    modal.classList.add("hide");
+    overlay.classList.add("hide");
+}
+
+
+//When Player loses lives
+function gameOver(){
+    overlay.classList.add("show");
+    gameover.classList.add("show");
+}
+
+//Resets the game
+function resetGame(){
+    window.location.reload(true);
+}
 
 
 // Enemies our player must avoid
@@ -118,8 +145,9 @@ class Hero {
         this.y = this.startY;
         this.x = this.startX;
     }
-    
+        
 }
+
 
 
 
@@ -136,6 +164,9 @@ class Hero {
  allEnemies.push(roach1, roach2, roach3, roach4);
  console.log(allEnemies);
 
+ 
+
+ 
 
 
 

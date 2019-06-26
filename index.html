@@ -17,23 +17,22 @@
 	<div class="overlay"></div> 
 	
 	<!--Game Start Modal -->
-	<div class=".game_start"> 
+	<div class="game_start"> 
 		<!--Modal Content -->
 		<div class="modal_body">
-			<span class="Close">&times;</span>
+			<span class="close">&times;</span>
 			<h1>Welcome to My Roach Roadway Game</h1>
 			<h2>Instructions</h2>
-			<p>Welcome to my Roach Roadway Game! Use your keyboard arrow keys-- up, down, left, right-- to move your Sprite across the road. Your goal is to move across the blocks and get to the water without colliding with those pesky roaches. Once you reach the water, you win. Good luck!</p>
+			<h4>Welcome to my Roach Roadway Game! Use your keyboard arrow keys-- up, down, left, right-- to move your Sprite across the road. Your goal is to move across the blocks and get to the water without colliding with those pesky roaches. Once you reach the water, you win. Good luck!</h4>
 			<button onclick="startGame()"> Ready! Set! Go!</button>
 		</div>
 	</div> 
 
-	<!-- Modal for winning game -->
-	<div class="winner">
-		<h1>Congratulations! You have won the game!</h1>
-		<p>You made it to the water safely!</p>
-		<h2>Play Again!</h2>
-		<button class="winner_button" onclick="resetGame()"> Play Again </button>
+	<!-- Modal for game over -->
+	<div class="game_over">
+		<h2>You made it to the water safely!</h2>
+		<h3>Play Again!</h3>
+		<button onclick="resetGame()"> Play Again </button>
 	</div> 
 
 	

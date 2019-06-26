@@ -1,41 +1,118 @@
 body {
     text-align: center;
     font-family: 'Open Sans', san-serif;
-    background-color: #2eb872;
+    background-color: #a3de83;
 }
 
-.header {
-	color: ;
-}
 
 .header h1 {
 	font-family: 'Luckiest Guy', cursive;
+	font-size: 3em;
 	padding: 30px;
 }
 
+canvas {
+	margin-top: -4em;
+}
 
 
 /* Modal Section */
 
 .overlay {
-	position: fixed; /* Sits on top of page */
-	display: none; /* Will be hidden by default */
-	width: 500px;
-	height: 530px;
+	background: rgba(0, 0, 0, 0.7);
+	transition: opacity 500ms;
+	width: 505px;
+	height: 538px;
+	position: absolute;
+	top: 155px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
 	
 }
 
 
-.game-start {
-	display: none;
-	position: fixed; 
-	z-index: 1;
-	
+.modal_body {
+	position: absolute;
+	background-color: #d4f4dd;
+	border-radius: 5px;
+	left: 0;
+	right: 0;
+	top: 205px;
+	width: 420px;
+	height: 410px;
+	margin: 0 auto;
+	padding: 1em 2em;
 }
 
-.modal_body p {
-	background-color: #fefefe;
-	
-	
+.modal_body h1, h2, h4 {
+	font-weight: bold;
 }
+
+.modal_body h4 {
+	color: #fa4659;
+
+}
+
+.modal_body button {
+	background-color: #fa4659;
+	border: none;
+	border-radius: 3px;
+	padding: 7px 15px;
+	font-size: 16px;
+}
+
+.close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover, 
+.close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.hide {
+	visibility: hidden;
+	opacity: 0 !important;
+}
+
+.show {
+	visibility: visible !important;
+	opacity: 1 !important;
+}
+
+/* Future Game Over Modal */
+
+
+
+
+.game_over {
+	position: absolute;
+	background-color: #d4f4dd;
+	border-radius: 5px;
+	left: 0;
+	right: 0;
+	top: 353px;
+	width: 420px;
+	height: 410px;
+	margin: 0 auto;
+	padding: 3em 3em;
+	visibility: hidden;
+}
+
+.game_over button {
+	background-color: #fa4659;
+	border: none;
+	border-radius: 3px;
+	padding: 7px 15px;
+	font-size: 16px;
+}
+
+
+
 
