@@ -135,7 +135,7 @@ header {
 	height: 410px;
 	margin: 0 auto;
 	padding: 3em 3em;
-	visibility: hidden;
+	display: none;
 }
 
 .game_over button {
