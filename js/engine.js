@@ -25,6 +25,7 @@ var Engine = (function(global) {
         lastTime,
         id;
 
+    
 
     canvas.width = 505;
     canvas.height = 606;
@@ -60,9 +61,13 @@ var Engine = (function(global) {
          * function again as soon as the browser is able to draw another frame.
          */
 
+         
+
 
         if (player.victory === true){
             win.cancelAnimationFrame(id);
+            
+            
            
         }
         else {
