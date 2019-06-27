@@ -21,7 +21,7 @@ btn.onclick = function startGame(){
 //End Game
 btnEnd.onclick = function gameOver(){
     modalEnd.classList.add("show");
-    overlay.classList.add("hide");
+    btEnd.classList.add("hide");
 }
 
 
