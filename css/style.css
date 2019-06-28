@@ -87,7 +87,9 @@ header {
 
 }
 
-.modal_body button {
+.btn_start {
+	display: inline-block;
+	box-sizing: border-box;
 	background-color: #fa4659;
 	border: none;
 	border-radius: 3px;
@@ -95,6 +97,13 @@ header {
 	font-size: 16px;
 }
 
+
+.btn_start:hover {
+	cursor: pointer;
+}
+
+
+/*
 .close {
 	color: #aaa;
 	float: right;
@@ -108,6 +117,7 @@ header {
 	text-decoration: none;
 	cursor: pointer;
 }
+*/
 
 .hide {
 	visibility: hidden;
@@ -125,26 +135,35 @@ header {
 
 
 .game_over {
-	position: absolute;
+	display: show; /* Hidden by default */
+	position: fixed;
+	z-index: 1;
 	background-color: #d4f4dd;
 	border-radius: 5px;
 	left: 0;
 	right: 0;
-	top: 353px;
+	top: 300px;
 	width: 420px;
 	height: 410px;
 	margin: 0 auto;
 	padding: 3em 3em;
-	display: none;
+	
 }
 
-.game_over button {
+.btn_replay {
+	display: inline-block;
+	box-sizing: border-box;
 	background-color: #fa4659;
 	border: none;
 	border-radius: 3px;
 	padding: 7px 15px;
 	font-size: 16px;
 }
+
+.btn_replay:hover {
+	cursor: pointer;
+}
+
 
 
 

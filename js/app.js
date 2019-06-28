@@ -18,11 +18,6 @@ btn.onclick = function startGame(){
     overlay.classList.add("hide");
 }
 
-//End Game
-btnEnd.onclick = function gameOver(){
-    modalEnd.classList.add("show");
-    btEnd.classList.add("show");
-}
 
 
 //Resets the game
@@ -30,12 +25,6 @@ function resetGame(){
     window.location.reload(true);
 }
 
-
-function endGame (){
-    if (this.y === 55){
-        gameOver()
-    }
-}
 
 // Enemies our player must avoid
 var Enemy = function(x, y, speed) {
