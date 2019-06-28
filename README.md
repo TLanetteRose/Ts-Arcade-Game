@@ -36,4 +36,4 @@ I received the HTML, CSS, and JS files from my [Udacity] program. I then added m
 One new skill I tried was adding elements and classes to the DOM using JS. However, I had difficulty getting my front and back images to work. So, I will keep working on that  project to share later. In this project, I used the unordered list in my HTML to set up my cards. My goal is to continue improving my JS skills so that I can program the game without tutorials. 
 
 ## Credits
-* Thank you to https://matthewcranford.com/arcade-game-walkthrough-part-6-collisions-win-conditions-and-game-resets/ 
+* Thank you to [Matthew Cranford](https://matthewcranford.com/arcade-game-walkthrough-part-6-collisions-win-conditions-and-game-resets/) 
