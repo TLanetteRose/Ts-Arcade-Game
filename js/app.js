@@ -6,7 +6,7 @@ const modal = document.querySelector(".game_start");
 const overlay = document.querySelector(".overlay");
 const btn = document.querySelector(".btn_start");
 const modalEnd = document.querySelector(".game_over");
-const btnEnd = document.querySelector(".btn_replay");
+const btnReplay = document.querySelector(".btn_replay");
 
 
 
@@ -18,11 +18,15 @@ btn.onclick = function startGame(){
     overlay.classList.add("hide");
 }
 
-
-
 //Resets the game
 function resetGame(){
     window.location.reload(true);
+}
+
+//End Game
+btnReplay.onclick = function endGame(){
+    modalEnd.style.display = "none";
+    resetGame();
 }
 
 
@@ -130,8 +134,11 @@ class Hero {
         //Check for win
         if(this.y === 55){
             this.victory = true;
+            modalEnd.style.display = "block"
         }
     }
+
+
 
     //Reset Hero
     reset() {
