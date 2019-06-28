@@ -135,7 +135,7 @@ header {
 
 
 .game_over {
-	display: show; /* Hidden by default */
+	display: hide; /* Hidden by default */
 	position: fixed;
 	z-index: 1;
 	background-color: #d4f4dd;
