@@ -11,15 +11,16 @@ A variation of the Classic Arcade Game Frogger
 
 ## Welcome and Background
 
-Welcome to my first **Memory Game**. (Actually, it’s my third one, and the one that works.)  I want to say thank you to [] for her tutorial about designing a memory game. JavaScript is not my strongest area. Ms. Israel-Ovirih included guidelines for planning this project. My goal was to produce a memory game with a cover image and the group of matching images on the other side of the card. I’m still working on that version. This version uses the **Font Awesome**  icons and a special trick to keep them hidden…So, let’s talk about my project!
+It's been a long time since I've played **Frogger**. So, I was very curious about how I would do making my own version of Frogger. Luckily, most of the JavaScript files were provided for me:
 
 ## How to Play
 First load my game link to my game into your browser: https://tlanetterose.github.io/Ts-Arcade-Game/
 
 ## Instructions
-
-It's been a long time since I've played **Frogger**. So, I was very curious about how I would do making my own version of Frogger. Luckily, most of the JavaScript files were provided for me: 
-* app.js
+* After you have loaded the game into your browser, you will see the directions for the game on your screen. 
+* Once you click the **Ready, Set, Go!** button, you're ready to start. 
+* Goal-- You need to cross the road before you get run over or "poached" by a roach. If you collide with a roach, you start back at your beginning spot. You can use the up, down, left, or right arrows to move your player on the screen.
+* You win when you make it safely to the water. Good luck!
 
 ## Dependencies
 
