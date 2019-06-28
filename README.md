@@ -1,20 +1,44 @@
-# Don't Get Poached By the Roach!
+# Don't Get Poached By The Roach!
+A variation of the Classic Arcade Game Frogger
 
 ## Table of Contents
+* [Welcome and Background](#welcome-and-background) 
+* [Instructions](#instructions)
+* [Dependencies](#dependencies) 
+* [Installations](#installations) 
+* [How I Created My Game](#how-i-created-my-game) 
 
-- [Instructions](#instructions)
-- [Contributing](#contributing)
+
+## Welcome and Background
+
+Welcome to my first **Memory Game**. (Actually, it’s my third one, and the one that works.)  I want to say thank you to [] for her tutorial about designing a memory game. JavaScript is not my strongest area. Ms. Israel-Ovirih included guidelines for planning this project. My goal was to produce a memory game with a cover image and the group of matching images on the other side of the card. I’m still working on that version. This version uses the **Font Awesome**  icons and a special trick to keep them hidden…So, let’s talk about my project!
+
+## How to Play
+First load my game link to my game into your browser: https://tlanetterose.github.io/TsMemoryGame/
 
 ## Instructions
 
-Use this [rubric](https://review.udacity.com/#!/rubrics/15/view) for self-checking your submission.
+I remember playing **Concentration** with a deck of playing cards when I was a little girl. It was a thrill to see if I could remember where the matching cards were located. That’s the same concept in my memory game. There are 16 cards with different icons. Players can test their skills at remembering where the matching icons are located. 
+* Click on a card to reveal the picture;
+* Click on the second card to see if it matches;
+* The matching cards will stay open and display as a turquoise blue; 
+* The unmatched cards will do a little (very tiny) movement and turn reddish-pink before they turn over;
+* Continue clicking on cards to find the matching pairs;
+* Try to match the cards using as few moves and as less time as you can. 
 
-Make sure the functions you write are **object-oriented** - either class functions (like `Player` and `Enemy`) or class prototype functions such as `Enemy.prototype.checkCollisions`. Also make sure that the keyword `this` is used appropriately within your class and class prototype functions to refer to the object the function is called upon.
+## Dependencies
 
-Your **README.md** file should be updated with instructions on both how to 1. Run and 2. Play your arcade game.
+This game uses the following library(s):
+* [Google Fonts](https://fonts.google.com/) : Open Sans was used for the body font and Luckiest Guy was used for the titles
 
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+## Installations 
 
-## Contributing
+There are no other installations for this game.
 
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+## How I Created My Game
+
+I received the HTML, CSS, and JS files from my [Udacity] program. I then added my own CSS styling to the program. Since I am still learning JS, I did research other tutorials about making  memory programs. I learned that there are different formats for designing this game. 
+One new skill I tried was adding elements and classes to the DOM using JS. However, I had difficulty getting my front and back images to work. So, I will keep working on that  project to share later. In this project, I used the unordered list in my HTML to set up my cards. My goal is to continue improving my JS skills so that I can program the game without tutorials. 
+
+## Credits
+* Thank you again to [Sandra Israel-Ovirih](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript) and her great tutorial. 
