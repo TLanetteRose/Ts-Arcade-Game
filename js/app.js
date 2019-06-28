@@ -129,8 +129,7 @@ class Hero {
         }
         //Check for win
         if(this.y === 55){
-           this.victory = true;
-           
+            this.victory = true;
         }
     }
 
