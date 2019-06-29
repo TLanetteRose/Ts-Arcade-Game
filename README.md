@@ -11,11 +11,10 @@ A variation of the Classic Arcade Game Frogger
 
 
 ## Welcome and Background
-
 It's been a long time since I've played **Frogger**. So, I was very curious about how I would do making my own version of Frogger. Luckily, most of the JavaScript files were provided. In this version, the player has to dodge racing roaches to cross the road. 
 
 ## How to Play
-First load my game link to my game into your browser: https://tlanetterose.github.io/Ts-Arcade-Game/
+First load my game link to my game into your browser by clicking the following link: https://tlanetterose.github.io/Ts-Arcade-Game/
 
 ## Instructions
 * After you have loaded the game into your browser, you will see the directions for the game on your screen. 
@@ -24,12 +23,10 @@ First load my game link to my game into your browser: https://tlanetterose.githu
 * You win when you make it safely to the water. Good luck!
 
 ## Dependencies
-
 This game uses the following library(s):
 * [Google Fonts](https://fonts.google.com/) : Open Sans was used for the body font and Luckiest Guy was used for the titles
 
 ## Installations 
-
 There are no other installations for this game.
 
 ## Resources 
