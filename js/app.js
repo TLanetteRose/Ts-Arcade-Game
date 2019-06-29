@@ -127,7 +127,7 @@ class Hero {
         //Check Collision
         for(let enemy of allEnemies){
             //Compare player and enemy x and y
-            if (this.y === enemy.y && (enemy.x + enemy.step/2 > this.x && enemy.x < this.x + this.step/2) ) {
+            if (this.y === enemy.y && (enemy.x + 70 >= this.x && enemy.x - 70 <= this.x)) {
                 this.reset();
             }
         }
@@ -156,13 +156,13 @@ class Hero {
 
 
  const player = new Hero();
- const roach1 = new Enemy(-101, 0, 200);
- const roach2 = new Enemy(-101, 83, 300);
- const roach3 = new Enemy((-101 * 2.5), 166, 300);
- const roach4 = new Enemy((-101 * 2.5), 0, 200);
-
- const allEnemies = [];
- allEnemies.push(roach1, roach2, roach3, roach4);
+ const allEnemies = [
+    new Enemy(-101, 0, 200),
+    new Enemy(-101, 83, 300),
+    new Enemy((-101 * 2.5), 166, 300),
+    new Enemy((-101 * 2.5), 0, 200)
+    ];
+    
  console.log(allEnemies);
 
  
