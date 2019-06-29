@@ -30,12 +30,10 @@ This game uses the following library(s):
 There are no other installations for this game.
 
 ## Resources 
-
 * [W3Schools:Game Tutorial](https://www.w3schools.com/graphics/game_intro.asp)
 * [MDN Web Documents](https://developer.mozilla.org/en-US/)
 
 ## How I Created My Game
-
 I received the HTML, CSS, and JS files from my [Udacity] program. I then added my own CSS styling to the program. This project had three JS files: app (main JS), resources (JS for loading images), and engine (JS file with game loop). I added a modal to start the game and to replay at the end of the game.  
 
 ## Credits
