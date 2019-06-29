@@ -5,13 +5,14 @@ A variation of the Classic Arcade Game Frogger
 * [Welcome and Background](#welcome-and-background) 
 * [Instructions](#instructions)
 * [Dependencies](#dependencies) 
-* [Installations](#installations) 
+* [Installations](#installations)
+* [Resources](#resources)
 * [How I Created My Game](#how-i-created-my-game) 
 
 
 ## Welcome and Background
 
-It's been a long time since I've played **Frogger**. So, I was very curious about how I would do making my own version of Frogger. Luckily, most of the JavaScript files were provided. 
+It's been a long time since I've played **Frogger**. So, I was very curious about how I would do making my own version of Frogger. Luckily, most of the JavaScript files were provided. In this version, the player has to dodge racing roaches to cross the road. 
 
 ## How to Play
 First load my game link to my game into your browser: https://tlanetterose.github.io/Ts-Arcade-Game/
@@ -33,7 +34,8 @@ There are no other installations for this game.
 
 ## Resources 
 
-* [W3Schools:Game Tutorial] (https://www.w3schools.com/graphics/game_intro.asp)
+* [W3Schools:Game Tutorial](https://www.w3schools.com/graphics/game_intro.asp)
+* [MDN Web Documents](https://developer.mozilla.org/en-US/)
 
 ## How I Created My Game
 
